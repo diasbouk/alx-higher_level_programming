@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 import sys
-file=sys.stderr.write('and that piece of art is useful - Dora Korpar, 2015-10-19')
+string =  "that piece of art is useful - Dora Korpar, "
+file=sys.stderr.write("{}{}-{}-{}".format(string, 2015, 10, 19))
 exit(1)
