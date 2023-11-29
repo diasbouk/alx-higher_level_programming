@@ -34,7 +34,11 @@ listint_t *insert_node(listint_t **head, int number)
 
 		copy = copy->next;
 	}
-	new->next = copy->next;
+    if (copy->next == NULL)
+    {
+        new = add_nodeint_end(head, number);
+    }
+    new->next = copy->next;
 	copy->next = new;
     new->n = copy->n;
     copy->n = number;
