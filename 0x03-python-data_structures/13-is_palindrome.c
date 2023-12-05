@@ -12,7 +12,7 @@
    listint_t *temp = *head;
    int *list_count = NULL, i = 1, j = 0;
 
-   if (!*head)
+   if (!*head || !(*head)->next)
       return (1);
    while (temp)
    {
