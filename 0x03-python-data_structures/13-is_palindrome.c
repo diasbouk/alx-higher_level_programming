@@ -20,18 +20,17 @@
       i++;
    }
    list_count = (int *)malloc(i * sizeof(int));
-   i = 0;
    while (*head)
    {
       list_count[i] = (*head)->n;
       *head = (*head)->next;
    }
 
-   while (j < i - 1)
+   while (j < i)
    {
-      if (list_count[j] != list_count[i])
+      if (list_count[j] != list_count[i - 1])
          return (0);
-      i++, j++;
+      i--, j++;
    }
    return (1);
 }
