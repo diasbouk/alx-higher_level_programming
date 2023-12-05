@@ -29,8 +29,12 @@
    while (j < i)
    {
       if (list_count[j] != list_count[i - 1])
+      {
+         free(list_count);
          return (0);
+      }
       i--, j++;
    }
+   free(list_count);
    return (1);
 }
