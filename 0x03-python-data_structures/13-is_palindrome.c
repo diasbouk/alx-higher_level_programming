@@ -27,7 +27,7 @@
       *head = (*head)->next;
    }
 
-   while (j < i)
+   while (j < i - 1)
    {
       if (list_count[j] != list_count[i])
          return (0);
