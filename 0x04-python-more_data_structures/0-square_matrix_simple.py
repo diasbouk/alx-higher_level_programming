@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import copy
 def square_matrix_simple(matrix=[]):
     response = []
     for row in matrix:
