@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    new_dict = {}
-    for elem in a_dictionary:
-        number = map(lambda num: num * 2, elem)
-        new_dict.append(list(number))
+    new_dict = a_dictionary.copy()
+    for key in new_dict.keys():
+        new_dict[key] *= 2
     return new_dict
