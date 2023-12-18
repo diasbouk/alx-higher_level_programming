@@ -1,11 +1,18 @@
 #!/usr/bin/pytohn3
 def list_division(my_list1, my_list2, list_length):
     new_list = []
-    exceptions = [ZeroDivisionError("division by 0"), IndexError("out of range"), TypeError("wrong type")]
     for i in range(0, list_length):
         try:
-            new_list.append(my_list1[i] / my_list2[i])
-        except exceptions as el:
-            print(e)
+            result = my_list1[i] / my_list2[i]
+        except IndexError:
+            result = 0
+            print("out of range")
+        except ZeroDivisionError:
+            result = 0
+            print("division by 0")
+        except TypeError:
+            result = 0
+            print("wrong type")
         finally:
-            return new_list
+            new_list.append(result)
+    return new_list
