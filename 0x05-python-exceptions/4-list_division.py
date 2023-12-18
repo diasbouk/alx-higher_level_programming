@@ -1,6 +1,7 @@
-#!/usr/bin/pytohn3
+#!/usr/bin/python3
 def list_division(my_list1, my_list2, list_length):
     new_list = []
+    result = 0
     for i in range(0, list_length):
         try:
             result = my_list1[i] / my_list2[i]
