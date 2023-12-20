@@ -21,14 +21,44 @@ class Node:
         return self.__next_node
     @next_node.setter
     def next_node(self, value):
-        if value != None or type(value) is not list:
+        if value is not None and type(value) is not Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
 """Singly Linked_list class"""
 class SinglyLinkedList:
-    def __init__(self, head=None):
-        self.__head = head
+    def __init__(self):
+        """Defines a singly linked list"""
+        self.__head = None
+
     def sorted_insert(self, value):
-        self.__value = value
+        new = Node(value)
+        tmp = self.__head
+        add_start = False
+
+        if not self.__head:
+            self.__head = new
+            new.next_node = None
+        else:
+            if value < self.__head.data:
+                add_start = True
+            while tmp.next_node and value > tmp.next_node.data\
+                    and not add_start:
+                tmp = tmp.next_node
+            if not add_start:
+                    new.next_node = tmp.next_node
+                    tmp.next_node = new
+            else:
+                new.next_node = tmp
+                self.__head = new
+            new.data = value
+
+    def __str__(self):
+        s = ""
+        current = self.__head
+
+        while current:
+            s += str(current.data) + '\n'
+            current = current.next_node
+        return s[: -1]
