@@ -4,8 +4,8 @@
 Rectangle class
 """
 
-class Rectangle:
 
+class Rectangle:
 
     """
     Nothing goes
