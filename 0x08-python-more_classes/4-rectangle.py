@@ -147,4 +147,3 @@ class Rectangle:
 
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-    
