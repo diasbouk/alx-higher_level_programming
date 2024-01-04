@@ -138,4 +138,3 @@ class Rectangle:
 
         """
         return self._draw_rectangle()
-    
