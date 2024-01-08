@@ -2,6 +2,7 @@
 
 """Module for sum function"""
 
+
 def add_integer(a, b=98):
     """Methode to count the sum of two numbers
     could be integers or floats
@@ -9,7 +10,7 @@ def add_integer(a, b=98):
     Args:
         a: first number
         b: second number
-    
+
         Raises:
         TypeError: if args arent numbers
     """
