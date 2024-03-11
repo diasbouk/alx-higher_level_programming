@@ -1,5 +1,5 @@
- 0x00. Python - Hello, World
-Python
+# 0x00. Python - Hello, World
+## Python
 
     By: Guillaume
     Weight: 1
@@ -7,7 +7,7 @@ Python
     Checker was released at Mar 11, 2024 9:00 AM
     An auto review will be launched at the deadline
 
-Concepts
+## Concepts
 
 For this project, we expect you to look at this concept:
 
@@ -28,9 +28,9 @@ Enjoy!
 
 - Guillaume
 
-Resources
+# Resources
 
-Read or watch:
+## Read or watch:
 
     The Python tutorial (only the first three chapters below)
     Whetting Your Appetite
@@ -40,7 +40,7 @@ Read or watch:
     Learn to Program
     Pycodestyle – Style Guide for Python Code
 
-Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 General
@@ -56,14 +56,14 @@ General
     What are indexing and slicing in Python
     What is the official Python coding style and how to check your code with pycodestyle
 
-Copyright - Plagiarism
+## Copyright - Plagiarism
 
     You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
     You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
     You are not allowed to publish any content of this project.
     Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-Requirements
+# Requirements
 Python Scripts
 
     Allowed editors: vi, vim, emacs
@@ -76,7 +76,7 @@ Python Scripts
     All your files must be executable
     The length of your files will be tested using wc
 
-Shell Scripts
+## Shell Scripts
 
     Allowed editors: vi, vim, emacs
     All your scripts will be tested on Ubuntu 20.04 LTS
@@ -85,7 +85,7 @@ Shell Scripts
     The first line of all your files should be exactly #!/bin/bash
     All your files must be executable
 
-C Scripts
+## C Scripts
 
     Allowed editors: vi, vim, emacs
     All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
