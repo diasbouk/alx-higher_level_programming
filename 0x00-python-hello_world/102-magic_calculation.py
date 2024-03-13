@@ -2,4 +2,4 @@
 
 def magic_calculation(a, b):
     i = 98
-    return pow(a, b) + b
+    return a ** b + b
