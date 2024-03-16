@@ -1,4 +1,4 @@
- 0x03. Python - Data Structures: Lists, Tuples
+
 Python
 
     By: Guillaume
@@ -9,13 +9,13 @@ Python
 
 Resources
 
-    Read or watch:
+Read or watch:
 
-        <a href="https://intranet.alxswe.com/rltoken/VarQbHxfmbnpGnaGp3Nb_A"> 3.1.3. Lists</a>
+<a href="https://intranet.alxswe.com/rltoken/VarQbHxfmbnpGnaGp3Nb_A"> 3.1.3. Lists</a>
 
-        <a href="https://intranet.alxswe.com/rltoken/2aa8Mp-V2eSieGeX3OX8yQ">  Data structures (until 5.3. Tuples and Sequences included)  </a>
+<a href="https://intranet.alxswe.com/rltoken/2aa8Mp-V2eSieGeX3OX8yQ">  Data structures (until 5.3. Tuples and Sequences included)  </a>
 
-        <a href="https://intranet.alxswe.com/rltoken/BX2_CuHj1sq4eYGiXbCYSg"> Learn to Program 6 : Lists </a>
+<a href="https://intranet.alxswe.com/rltoken/BX2_CuHj1sq4eYGiXbCYSg"> Learn to Program 6 : Lists </a>
 
 Learning Objectives
 
