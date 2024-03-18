@@ -8,4 +8,3 @@ def print_matrix_integer(matrix=[[]]):
             if number != element[idx]:
                 print(" ", end="")
         print("")
-
