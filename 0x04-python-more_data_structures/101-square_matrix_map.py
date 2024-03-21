@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import math
 
 def square_matrix_map(matrix=[]):
-    return list(list(map(lambda value: value ** 2), matrix))
+    return matrix[map(lambda num: math.sqrt(num), matrix)]
