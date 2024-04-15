@@ -3,6 +3,7 @@
 Modules docs (if any)
 """
 
+
 def lookup(obj):
     """
     Looks for an object infos
