@@ -24,16 +24,16 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        self.width= value
-        self.height= value
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
-        """ Updates the class """
+        """Updates the class"""
         if args:
             if args[0] is not None:
                 self.id = args[0]
             if args[1] is not None:
-                self.size = args[1] 
+                self.size = args[1]
             if args[2] is not None:
                 self.x = args[2]
             if args[3] is not None:
@@ -41,3 +41,13 @@ class Square(Rectangle):
         elif kwargs:
             for key, value in kwargs.items():
                 self.key = value
+
+    def to_dictionary(self):
+        """To dict"""
+        return {
+            "x": self.x,
+            "y": self.y,
+            "id": self.id,
+            "height": self.size,
+            "width": self.size,
+        }
