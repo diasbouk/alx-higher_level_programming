@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Imports and stuff here ==> """
-from typing import Type
 from models.base import Base
 
 
@@ -75,3 +74,23 @@ class Rectangle(Base):
                 print("#",end="")
             print("")
 
+    def __str__(self):
+        """ Overrrides the str repes of the class """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """ Updates the the class """
+        if kwargs is None:
+            if args[0] is not None:
+                self.id = args[0]
+            if args[1] is not None:
+                self.width= args[1]
+            if args[2] is not None:
+                self.height = args[2]
+            if args[3] is not None:
+                self.x = args[3]
+            if args[4] is not None:
+                self.y = args[4]
+        else:
+            for (key, value) in kwargs.items():
+                self.key = value
