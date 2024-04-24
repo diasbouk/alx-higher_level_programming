@@ -56,7 +56,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """They property."""
-        return self._y
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -64,7 +64,7 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
-        self._y = value
+        self.__y = value
 
     def area(self):
         """Returns the area of the rectangle"""
