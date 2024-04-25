@@ -15,10 +15,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """String repesenting of the class"""
-        return "[Square] ({}) {}/{} - {}".format(self.id,
-                                                 self.x,
-                                                 self.y,
-                                                 self.width)
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
@@ -30,20 +27,25 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def __update(self, id=None, size=None, x=None, y=None):
+        """Internal method that updates instance attributes via */**args."""
+        if id is not None:
+            self.id = id
+        if size is not None:
+            self.width = size
+        if size is not None:
+            self.height = size
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
+
     def update(self, *args, **kwargs):
-        """Updates the class"""
+        """Updates the the class"""
         if args:
-            if args[0] is not None:
-                self.id = args[0]
-            if args[1] is not None:
-                self.size = args[1]
-            if args[2] is not None:
-                self.x = args[2]
-            if args[3] is not None:
-                self.y = args[3]
+            self.__update(*args)
         elif kwargs:
-            for key, value in kwargs.items():
-                self.key = value
+            self.__update(**kwargs)
 
     def to_dictionary(self):
         """To dict"""
