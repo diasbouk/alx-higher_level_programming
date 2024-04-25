@@ -10,8 +10,6 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """Class constructor"""
         super().__init__(size, size, x, y, id)
-        self.width = size
-        self.height = size
 
     def __str__(self):
         """String repesenting of the class"""
