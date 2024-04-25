@@ -76,7 +76,7 @@ class Rectangle(Base):
             print("")
         for i in range(self.__height):
             for j in range(self.__x):
-                print(" ", end='')
+                print(" ", end="")
             for i in range(self.__width):
                 print("#", end="")
             print("")
@@ -87,22 +87,26 @@ class Rectangle(Base):
             self.id, self.x, self.y, self.width, self.height
         )
 
+    def __update(self, id=None, width=None, height=None, x=None, y=None):
+        """Internal method that updates instance attributes via */**args."""
+        if id is not None:
+            self.id = id
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
+
     def update(self, *args, **kwargs):
         """Updates the the class"""
-        if args is not None and len(args) != 0:
-            if args[0] is not None:
-                self.id = args[0]
-            if args[1] is not None:
-                self.__width = args[1]
-            if args[2] is not None:
-                self.__height = args[2]
-            if args[3] is not None:
-                self.__x = args[3]
-            if args[4] is not None:
-                self.__y = args[4]
-        if kwargs:
-            for key, value in kwargs.items():
-                self.key = value
+        if args:
+            self.__update(*args)
+        elif kwargs:
+            self.__update(**kwargs)
+
 
     def to_dictionary(self):
         """To dict"""
