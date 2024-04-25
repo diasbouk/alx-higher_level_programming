@@ -107,7 +107,6 @@ class Rectangle(Base):
         elif kwargs:
             self.__update(**kwargs)
 
-
     def to_dictionary(self):
         """To dict"""
         return {
