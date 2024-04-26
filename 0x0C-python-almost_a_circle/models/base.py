@@ -31,5 +31,6 @@ class Base:
             return []
         else:
             list_objs = [inst.to_dictionary() for inst in list_objs]
-            with open("{}.json".format(cls.__name__), "w", encoding="utf-8") as file:
+            with open("{}.json".format(cls.__name__),
+                      "w", encoding="utf-8") as file:
                 file.write(cls.to_json_string(list_objs))
