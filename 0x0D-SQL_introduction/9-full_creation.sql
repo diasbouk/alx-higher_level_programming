@@ -1,7 +1,7 @@
 -- Creates a table second_table in the database hbtn_0c_0
 CREATE TABLE IF NOT EXIST second_table (
 	id int,
-	name varchar(256)
+	name varchar(256),
 	score int
 );
 
