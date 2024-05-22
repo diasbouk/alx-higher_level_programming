@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXIST second_table (
 
 -- Creates new records
 
-INSERT INTO second_table ('id', 'name', 'values') VALUES(1, 'Jhon', 10);
-INSERT INTO second_table ('id', 'name', 'values') VALUES(2, 'Alex', 3);
-INSERT INTO second_table ('id', 'name', 'values') VALUES(3,'Bob', 14);
-INSERT INTO second_table ('id', 'name', 'values') VALUES(4,'George', 8);
+INSERT INTO `second_table` ('id', 'name', 'values') VALUES(1, 'Jhon', 10);
+INSERT INTO `second_table` ('id', 'name', 'values') VALUES(2, 'Alex', 3);
+INSERT INTO `second_table` ('id', 'name', 'values') VALUES(3,'Bob', 14);
+INSERT INTO `second_table` ('id', 'name', 'values') VALUES(4,'George', 8);
