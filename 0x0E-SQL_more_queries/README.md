@@ -146,4 +146,4 @@ id  name
 8   Thriller
 $
 
-1[img](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T005430Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a50f9e631e6c51ef01c032066b6667a373f067344420fdfb38e8343c8776c9c8)
+![img](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T005430Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a50f9e631e6c51ef01c032066b6667a373f067344420fdfb38e8343c8776c9c8)
