@@ -7,4 +7,4 @@
 --
 -- In this example, new data have been added to the table second_table.
 
-SELECT score, name FROM second_table ORDER DESC;
+SELECT score, name FROM second_table ORDER BY score DESC;
