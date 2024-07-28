@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const av = process.argv;
 if (isNaN(Number(av[2]))) {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 } else {
   let i = 0;
   let line = '';
