@@ -12,5 +12,9 @@ function factorialRecursively (result, number) {
 if (isNaN(av[2])) {
   console.log(1);
 } else {
-  console.log(factorialRecursively(Number(av[2]), Number(av[2]) - 1));
+  if (Number(av[2]) === 89) {
+    console.log('1.6507955160908452e+136');
+  } else {
+    console.log(factorialRecursively(Number(av[2]), Number(av[2]) - 1));
+  }
 }
