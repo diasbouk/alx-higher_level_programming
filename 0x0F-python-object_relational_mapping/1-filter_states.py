@@ -11,7 +11,7 @@ if __name__ == "__main__":
                          db=av[3],
                          port=3306)
     cur = db.cursor()
-    num_rows = cur.execute('SELECT * FROM states WHERE name LIKE UPPER "N%"')
+    num_rows = cur.execute('SELECT * FROM states WHERE name LIKE BINARY "N%";')
     rows = cur.fetchall()
     for row in rows:
         print(row)
